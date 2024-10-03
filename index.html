@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://cdn-icons-png.freepik.com/256/3673/3673355.png?semt=ais_hybrid"
+    />
+    <title>Work</title>
+    <link rel="stylesheet" href="/styles/null.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="name__title">T.R.A.N.S.L.I.T.</h1>
+        <form id="wordForm" action="">
+          <input
+            type="text"
+            id="wordInput"
+            placeholder="Начните вводить текст"
+            required
+          />
+          <input type="submit" class="submit" value="Добавить" />
+        </form>
+        <div class="dictionary" id="dictionary">
+          <div class="block" id="rusBlock">
+            <div class="entry">
+              <div class="rus" title="Привет!">1 Привет 👋🏻</div>
+            </div>
+          </div>
+          <div class="block__eng" id="engBlock">
+            <div class="entry">
+              <div class="eng" title="Privet!">Privet!</div>
+              <button
+                class="button__delete__stroke"
+                onclick="deleteEntry(this)"
+              >
+                <img
+                  class="delete__btn__block"
+                  src="/images/icon.svg"
+                  alt="Удалить"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="reset__btn" id="resetBtn">
+          <div class="own__under"><img class="clear__svg__btn" src="/images/icon.svg" alt="icon" /></div>
+          Очистить всё
+        </button>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
